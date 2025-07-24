@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(120deg, #485563 0%, #29323c 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch-container {
+  background: linear-gradient(135deg, #232526 0%, #434343 100%);
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.4), 0 2px 6px rgba(68,85,120,0.09);
+  padding: 2.2em 3.5em;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.display {
+  font-size: 2.8em;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  box-shadow: 0 4px 22px rgba(78,84,200,0.23);
+  border-radius: 12px;
+  margin-bottom: 1.3em;
+  letter-spacing: 2.5px;
+  padding: 0.5em 1.4em;
+  transition: background 0.2s;
+}
+
+.controls button {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  border: none;
+  color: #fff;
+  font-size: 1.15em;
+  padding: 0.8em 1.8em;
+  margin: 0.3em 0.5em;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(48,90,200,0.14);
+  transition: background 0.2s, transform 0.15s;
+}
+
+.controls button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #56ccf2 0%, #2f80ed 100%);
+  transform: scale(1.07);
+}
+
+.controls button:disabled {
+  background: #818181;
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.1em;
+  max-height: 170px;
+  overflow-y: auto;
+}
+
+.laps li {
+  background: #24243e;
+  margin: 0.28em 0;
+  padding: 0.72em 1.1em;
+  border-radius: 6px;
+  font-size: 1.08em;
+  box-shadow: 0 1px 6px rgba(42,42,70,0.11);
+  transition: background 0.18s;
+}
+
+.laps li:nth-child(odd) {
+  background: #383855;
+}
